@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080808">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='s' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23fff'/%3E%3Cstop offset='.48' stop-color='%237d8492'/%3E%3Cstop offset='1' stop-color='%23f8f8ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='%2307070b'/%3E%3Cpath d='M12 49 29 12h7l17 37H42l-3-8H25l-3 8z' fill='url(%23s)'/%3E%3Cellipse cx='32' cy='33' rx='28' ry='10' fill='none' stroke='%23e8ecff' stroke-width='3' transform='rotate(-24 32 33)'/%3E%3C/svg%3E">
 <title>ANTIХАОС — Find your direction</title>
 
 <style>
@@ -91,13 +92,23 @@ header {
 }
 
 .logo {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(180deg,#ffffff 0%,#dfe2eb 24%,#858b99 48%,#ffffff 68%,#9ca2b0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-family: Manrope, sans-serif;
   font-weight: 800;
   font-size: 19px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  white-space: nowrap;
+  filter: drop-shadow(0 0 10px rgba(220,225,255,.16));
 }
 
-.logo span { color: #888; }
+.logo span { color: transparent; }
 
 .nav {
   display: flex;
@@ -674,17 +685,36 @@ main { padding-top: 80px; }
 }
 
 .creator-avatar {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   width: 75px;
   height: 75px;
   flex-shrink: 0;
-  border: 1px solid rgba(255,255,255,.35);
+  border: 1px solid rgba(255,255,255,.9);
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-family: Manrope, sans-serif;
   font-size: 22px;
-  background: radial-gradient(circle, #555, #111 70%);
-  box-shadow: 0 0 35px rgba(255,255,255,.1);
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #17191f;
+  background: linear-gradient(145deg,#fff 0%,#dce0e8 22%,#777e8c 48%,#f8f9ff 70%,#8b929f 100%);
+  text-shadow: 0 1px 0 rgba(255,255,255,.55);
+  box-shadow: inset 0 2px 6px rgba(255,255,255,.95),inset 0 -7px 14px rgba(0,0,0,.32),0 0 32px rgba(220,225,255,.2);
+}
+.creator-avatar::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 130%;
+  height: 35%;
+  top: 8%;
+  left: -15%;
+  transform: rotate(-32deg);
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,.72),transparent);
+  filter: blur(3px);
 }
 
 .creator h3 { font-size: 17px; margin-bottom: 8px; }
@@ -728,6 +758,9 @@ footer a { color: #999; text-decoration: none; }
 }
 
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Keep the creator identity visible even if the scroll observer is unavailable. */
+#creatorSection.reveal { opacity: 1; visibility: visible; transform: none; }
 
 
 
@@ -819,6 +852,7 @@ footer a { color: #999; text-decoration: none; }
 
 @media (max-width: 600px) {
   header { padding: 16px 5%; }
+  .logo { font-size: 16px; letter-spacing: 2px; }
   .nav {
     display: none;
     position: absolute;
@@ -1064,7 +1098,7 @@ footer a { color: #999; text-decoration: none; }
   <p>ANTIХАОС / YOUR SPACE FOR CLARITY</p>
 </section>
 
-<section class="section reveal" style="padding-top:20px">
+<section class="section reveal" id="creatorSection" style="padding-top:20px">
   <div class="section-heading">
     <div>
       <div class="section-kicker" data-i="sectionFour">04 / СОЗДАТЕЛЬ</div>
