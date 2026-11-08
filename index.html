@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080808">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='s' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23fff'/%3E%3Cstop offset='.48' stop-color='%237d8492'/%3E%3Cstop offset='1' stop-color='%23f8f8ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='%2307070b'/%3E%3Cpath d='M12 49 29 12h7l17 37H42l-3-8H25l-3 8z' fill='url(%23s)'/%3E%3Cellipse cx='32' cy='33' rx='28' ry='10' fill='none' stroke='%23e8ecff' stroke-width='3' transform='rotate(-24 32 33)'/%3E%3C/svg%3E">
-<title>ANTIРҐРђРћРЎ вЂ” Find your direction</title>
+<title>ANTIХАОС — AI Assistant</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
@@ -108,7 +108,7 @@ header {
   filter: drop-shadow(0 0 10px rgba(220,225,255,.16));
 }
 
-.logo span { color: transparent; }
+.logo span { color: transparent; font-size: 11px; letter-spacing: 1.5px; margin-left: 5px; vertical-align: 2px; }
 
 .nav {
   display: flex;
@@ -764,7 +764,7 @@ footer a { color: #999; text-decoration: none; }
 
 
 
-/* ANTIРҐРђРћРЎ AI CHAT */
+/* ANTIХАОС AI CHAT */
 .chat-panel { margin-top: 26px; border: 1px solid var(--line); background: rgba(255,255,255,.035); border-radius: 8px; overflow: hidden; }
 .chat-head { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 20px; border-bottom:1px solid var(--line); }
 .chat-head strong { font-size:12px; letter-spacing:2px; }
@@ -902,18 +902,18 @@ footer a { color: #999; text-decoration: none; }
 <div class="ambient three"></div>
 
 <header>
-  <div class="logo">ANTI<span>РҐРђРћРЎ</span></div>
+  <div class="logo">ANTIХАОС <span>AI Assistant</span></div>
 
   <nav class="nav" id="nav">
-    <a href="#home" data-i="navHome">Р“Р»Р°РІРЅР°СЏ</a>
-    <a href="#intelligence" data-i="navAI">РРЅС‚РµР»Р»РµРєС‚</a>
-    <a href="#history" data-i="navHistory">РњРѕРё РїР»Р°РЅС‹</a>
-    <a href="#about" data-i="navAbout">Рћ РїСЂРѕРµРєС‚Рµ</a>
+    <a href="#home" data-i="navHome">Главная</a>
+    <a href="#intelligence" data-i="navAI">Интеллект</a>
+    <a href="#history" data-i="navHistory">Мои планы</a>
+    <a href="#about" data-i="navAbout">О проекте</a>
   </nav>
 
   <div class="header-right">
     <button class="lang-btn" id="langBtn">RU / KO</button>
-    <button class="menu-btn" id="menuBtn" aria-label="РћС‚РєСЂС‹С‚СЊ РјРµРЅСЋ">в°</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
   </div>
 </header>
 
@@ -921,25 +921,25 @@ footer a { color: #999; text-decoration: none; }
 
 <section class="hero" id="home">
   <div class="hero-content">
-    <div class="eyebrow" data-i="eyebrow">РџСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ СЏСЃРЅРѕСЃС‚Рё</div>
+    <div class="eyebrow" data-i="eyebrow">Пространство ясности</div>
 
     <h1>
-      <span data-i="heroLine1">РќР°Р№РґРё</span><br>
-      <span class="outline" data-i="heroLine2">СЃРІРѕР№ РїСѓС‚СЊ.</span>
+      <span data-i="heroLine1">Найди</span><br>
+      <span class="outline" data-i="heroLine2">свой путь.</span>
     </h1>
 
     <p class="hero-description" data-i="heroDesc">
-      РљРѕРіРґР° РјС‹СЃР»Рё РїСЂРµРІСЂР°С‰Р°СЋС‚СЃСЏ РІ С…Р°РѕСЃ, РЅСѓР¶РµРЅ РЅРµ С€СѓРј.
-      РќСѓР¶РЅР° СЏСЃРЅРѕСЃС‚СЊ. Р Р°Р·Р»РѕР¶Рё СЃР»РѕР¶РЅРѕРµ РЅР° РїСЂРѕСЃС‚С‹Рµ С€Р°РіРё
-      Рё РЅР°С‡РЅРё РґРІРёРіР°С‚СЊСЃСЏ РІРїРµСЂС‘Рґ.
+      Когда мысли превращаются в хаос, нужен не шум.
+      Нужна ясность. Разложи сложное на простые шаги
+      и начни двигаться вперёд.
     </p>
 
     <div class="hero-actions">
-      <button class="primary-btn" id="startBtn" data-i="startBtn">РќРђР™РўР РЇРЎРќРћРЎРўР¬ в†—</button>
-      <button class="secondary-btn" id="historyBtn" data-i="historyBtn">РњРћР РџР›РђРќР«</button>
+      <button class="primary-btn" id="startBtn" data-i="startBtn">НАЙТИ ЯСНОСТЬ ↗</button>
+      <button class="secondary-btn" id="historyBtn" data-i="historyBtn">МОИ ПЛАНЫ</button>
     </div>
 
-    <div class="hero-note" data-i="heroNote">THINK CLEAR В· MOVE FORWARD В· REPEAT</div>
+    <div class="hero-note" data-i="heroNote">THINK CLEAR · MOVE FORWARD · REPEAT</div>
   </div>
 
   <div class="hero-visual" id="heroVisual">
@@ -956,81 +956,81 @@ footer a { color: #999; text-decoration: none; }
 <section class="section reveal" id="intelligence">
   <div class="section-heading">
     <div>
-      <div class="section-kicker" data-i="sectionOne">01 / РџР РћРЎРўР РђРќРЎРўР’Рћ РњР«РЎР›Р•Р™</div>
-      <h2 data-i="analyzerHeading">Р Р°Р·Р»РѕР¶Рё С…Р°РѕСЃ.</h2>
+      <div class="section-kicker" data-i="sectionOne">01 / ПРОСТРАНСТВО МЫСЛЕЙ</div>
+      <h2 data-i="analyzerHeading">Разложи хаос.</h2>
     </div>
     <p data-i="analyzerSub">
-      РћРїРёС€Рё С‚Рѕ, С‡С‚Рѕ С‚РµР±СЏ Р±РµСЃРїРѕРєРѕРёС‚. РќР°С‡РЅС‘Рј СЃ РѕРґРЅРѕРіРѕ РїСЂРµРґР»РѕР¶РµРЅРёСЏ.
+      Опиши то, что тебя беспокоит. Начнём с одного предложения.
     </p>
   </div>
 
   <div class="analyzer">
     <div class="analyzer-top">
-      <div class="analyzer-title" data-i="analyzerTitle">РўР’РћРЇ РЎРРўРЈРђР¦РРЇ</div>
-      <div class="live-indicator" data-i="systemReady">РЎРРЎРўР•РњРђ Р“РћРўРћР’Рђ</div>
+      <div class="analyzer-title" data-i="analyzerTitle">ТВОЯ СИТУАЦИЯ</div>
+      <div class="live-indicator" data-i="systemReady">СИСТЕМА ГОТОВА</div>
     </div>
 
     <textarea id="problem" maxlength="3000"
       data-placeholder="placeholder"
-      placeholder="Р Р°СЃСЃРєР°Р¶Рё, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚. Р§С‚Рѕ С‚РµР±СЏ Р±РµСЃРїРѕРєРѕРёС‚? Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РёР·РјРµРЅРёС‚СЊ..."
+      placeholder="Расскажи, что происходит. Что тебя беспокоит? Что ты хочешь изменить..."
     ></textarea>
 
     <div class="input-bottom">
-      <span data-i="privateNote">РўРІРѕРё Р·Р°РїРёСЃРё РѕСЃС‚Р°СЋС‚СЃСЏ РІ СЌС‚РѕРј Р±СЂР°СѓР·РµСЂРµ.</span>
+      <span data-i="privateNote">Твои записи остаются в этом браузере.</span>
       <span id="charCount">0 / 3000</span>
     </div>
 
-    <div class="category-title" data-i="categoryTitle">Р’Р«Р‘Р•Р Р РќРђРџР РђР’Р›Р•РќРР•</div>
+    <div class="category-title" data-i="categoryTitle">ВЫБЕРИ НАПРАВЛЕНИЕ</div>
 
     <div class="categories" id="categories">
       <button class="category" data-category="work">
-        <span class="symbol">вЊ</span><span data-i="catWork">Р Р°Р±РѕС‚Р°</span>
+        <span class="symbol">⌘</span><span data-i="catWork">Работа</span>
       </button>
       <button class="category" data-category="study">
-        <span class="symbol">вЊЃ</span><span data-i="catStudy">РЈС‡С‘Р±Р°</span>
+        <span class="symbol">⌁</span><span data-i="catStudy">Учёба</span>
       </button>
       <button class="category" data-category="life">
-        <span class="symbol">в—Њ</span><span data-i="catLife">Р–РёР·РЅСЊ</span>
+        <span class="symbol">◌</span><span data-i="catLife">Жизнь</span>
       </button>
       <button class="category" data-category="relations">
-        <span class="symbol">в€ћ</span><span data-i="catRelations">РћС‚РЅРѕС€РµРЅРёСЏ</span>
+        <span class="symbol">∞</span><span data-i="catRelations">Отношения</span>
       </button>
       <button class="category" data-category="growth">
-        <span class="symbol">в†—</span><span data-i="catGrowth">Р Р°Р·РІРёС‚РёРµ</span>
+        <span class="symbol">↗</span><span data-i="catGrowth">Развитие</span>
       </button>
       <button class="category active" data-category="other">
-        <span class="symbol">вњі</span><span data-i="catOther">Р”СЂСѓРіРѕРµ</span>
+        <span class="symbol">✳</span><span data-i="catOther">Другое</span>
       </button>
     </div>
 
     <div class="analyze-row">
-      <small data-i="analyzeHint">РќРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ С„РѕСЂРјСѓР»РёСЂРѕРІР°С‚СЊ РёРґРµР°Р»СЊРЅРѕ.</small>
+      <small data-i="analyzeHint">Не обязательно формулировать идеально.</small>
       <div style="display:flex;align-items:center;gap:10px">
-        <button class="mic-btn" id="micBtn" type="button" title="РќР°РґРёРєС‚РѕРІР°С‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ" aria-label="РќР°РґРёРєС‚РѕРІР°С‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ">рџЋ™</button>
-        <button class="primary-btn" id="analyzeBtn" data-i="analyzeBtn">Р РђР—РћР‘Р РђРўР¬РЎРЇ в†—</button>
+        <button class="mic-btn" id="micBtn" type="button" title="Надиктовать сообщение" aria-label="Надиктовать сообщение">🎙</button>
+        <button class="primary-btn" id="analyzeBtn" data-i="analyzeBtn">РАЗОБРАТЬСЯ ↗</button>
       </div>
     </div>
 
     <div class="chat-panel" id="chatPanel">
       <div class="chat-head">
-        <strong>ANTIРҐРђРћРЎ / AI COMPANION</strong>
+        <strong>ANTIХАОС / AI COMPANION</strong>
         <span class="chat-status" id="chatStatus">GROQ READY</span>
       </div>
-      <div class="chat-messages" id="chatMessages" aria-live="polite" aria-label="Р”РёР°Р»РѕРі СЃ ANTIРҐРђРћРЎ">
-        <div class="chat-message assistant"><span class="speaker">ANTIРҐРђРћРЎ</span><span id="welcomeMessage">Р—РґРµСЃСЊ РјРѕР¶РЅРѕ СЃРїРѕРєРѕР№РЅРѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚. РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РІС‹СЃР»СѓС€Р°С‚СЊ Р±РµР· РѕСЃСѓР¶РґРµРЅРёСЏ Рё РїРѕРјРѕС‡СЊ РЅР°Р№С‚Рё СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі.</span></div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite" aria-label="Диалог с ANTIХАОС">
+        <div class="chat-message assistant"><span class="speaker">ANTIХАОС</span><span id="welcomeMessage">Здесь можно спокойно рассказать, что происходит. Я постараюсь выслушать без осуждения и помочь найти следующий шаг.</span></div>
       </div>
-      <div class="chat-typing" id="chatTyping" hidden>ANTIРҐРђРћРЎ С„РѕСЂРјСѓР»РёСЂСѓРµС‚ РѕС‚РІРµС‚вЂ¦</div>
+      <div class="chat-typing" id="chatTyping" hidden>ANTIХАОС формулирует ответ…</div>
       <div class="image-preview" id="imagePreview" hidden>
-        <img id="imagePreviewImg" alt="РџСЂРµРґРїСЂРѕСЃРјРѕС‚СЂ С„РѕС‚РѕРіСЂР°С„РёРё">
-        <span class="image-preview-label">Р¤РћРўРћР“Р РђР¤РРЇ<br>РџР РРљР Р•РџР›Р•РќРђ</span>
-        <button type="button" id="removeImageBtn" aria-label="РЈР±СЂР°С‚СЊ С„РѕС‚РѕРіСЂР°С„РёСЋ" title="РЈР±СЂР°С‚СЊ С„РѕС‚РѕРіСЂР°С„РёСЋ">Г—</button>
+        <img id="imagePreviewImg" alt="Предпросмотр фотографии">
+        <span class="image-preview-label">ФОТОГРАФИЯ<br>ПРИКРЕПЛЕНА</span>
+        <button type="button" id="removeImageBtn" aria-label="Убрать фотографию" title="Убрать фотографию">×</button>
       </div>
       <div class="chat-controls">
         <input type="file" id="imageInput" accept="image/jpeg,image/png,image/webp" hidden>
-        <button class="small-btn" id="attachImageBtn" type="button">пј‹ РџР РРљР Р•РџРРўР¬ Р¤РћРўРћ</button>
-        <button class="small-btn" id="clearChatBtn" type="button">РћР§РРЎРўРРўР¬ Р”РРђР›РћР“</button>
+        <button class="small-btn" id="attachImageBtn" type="button">＋ ПРИКРЕПИТЬ ФОТО</button>
+        <button class="small-btn" id="clearChatBtn" type="button">ОЧИСТИТЬ ДИАЛОГ</button>
       </div>
-      <p class="chat-privacy">РЎРѕРѕР±С‰РµРЅРёСЏ Рё РїСЂРёРєСЂРµРїР»С‘РЅРЅС‹Рµ С„РѕС‚РѕРіСЂР°С„РёРё РѕС‚РїСЂР°РІР»СЏСЋС‚СЃСЏ РІ Groq РґР»СЏ РіРµРЅРµСЂР°С†РёРё РѕС‚РІРµС‚РѕРІ. РќРµ РІРІРѕРґРё РїР°СЂРѕР»Рё Рё РґСЂСѓРіРёРµ СЃРµРєСЂРµС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ. РџРµСЂРµРїРёСЃРєР° РЅРµ СЃРѕС…СЂР°РЅСЏРµС‚СЃСЏ СЃР°Р№С‚РѕРј Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. Р Р°СЃРїРѕР·РЅР°РІР°РЅРёРµ РіРѕР»РѕСЃР° Р·Р°РІРёСЃРёС‚ РѕС‚ Р±СЂР°СѓР·РµСЂР° Рё РµРіРѕ РЅР°СЃС‚СЂРѕРµРє. ANTIРҐРђРћРЎ вЂ” РР-РїРѕРјРѕС‰РЅРёРє, Р° РЅРµ Р»РёС†РµРЅР·РёСЂРѕРІР°РЅРЅС‹Р№ РїСЃРёС…РѕР»РѕРі РёР»Рё РІСЂР°С‡.</p>
+      <p class="chat-privacy">Сообщения и прикреплённые фотографии отправляются в Groq для генерации ответов. Не вводи пароли и другие секретные данные. Переписка не сохраняется сайтом автоматически. Распознавание голоса зависит от браузера и его настроек. ANTIХАОС — ИИ-помощник, а не лицензированный психолог или врач.</p>
     </div>
 
     <div class="result" id="result" aria-live="polite">
@@ -1038,9 +1038,9 @@ footer a { color: #999; text-decoration: none; }
       <p class="result-intro" id="resultIntro"></p>
       <div class="steps" id="steps"></div>
       <div class="result-actions">
-        <button class="small-btn" id="copyBtn" data-i="copyBtn">РљРћРџРР РћР’РђРўР¬ РџР›РђРќ</button>
-        <button class="small-btn" id="saveBtn" data-i="saveBtn">РЎРћРҐР РђРќРРўР¬</button>
-        <button class="small-btn" id="newBtn" data-i="newBtn">РќРћР’Р«Р™ РђРќРђР›РР—</button>
+        <button class="small-btn" id="copyBtn" data-i="copyBtn">КОПИРОВАТЬ ПЛАН</button>
+        <button class="small-btn" id="saveBtn" data-i="saveBtn">СОХРАНИТЬ</button>
+        <button class="small-btn" id="newBtn" data-i="newBtn">НОВЫЙ АНАЛИЗ</button>
       </div>
     </div>
   </div>
@@ -1049,68 +1049,68 @@ footer a { color: #999; text-decoration: none; }
 <section class="section reveal" id="history">
   <div class="section-heading">
     <div>
-      <div class="section-kicker" data-i="sectionTwo">02 / РўР’РћР™ РџР РћР“Р Р•РЎРЎ</div>
-      <h2 data-i="historyHeading">РњРѕРё РїР»Р°РЅС‹.</h2>
+      <div class="section-kicker" data-i="sectionTwo">02 / ТВОЙ ПРОГРЕСС</div>
+      <h2 data-i="historyHeading">Мои планы.</h2>
     </div>
-    <p data-i="historySub">РЎРѕС…СЂР°РЅСЏР№ СЃРІРѕРё СЂРµС€РµРЅРёСЏ Рё РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє РЅРёРј, РєРѕРіРґР° РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.</p>
+    <p data-i="historySub">Сохраняй свои решения и возвращайся к ним, когда понадобится.</p>
   </div>
 
   <div class="history-list" id="historyList">
-    <p class="history-empty" data-i="historyEmpty">Р—РґРµСЃСЊ РїРѕРєР° РїСѓСЃС‚Рѕ. РЎРѕС…СЂР°РЅРё СЃРІРѕР№ РїРµСЂРІС‹Р№ РїР»Р°РЅ.</p>
+    <p class="history-empty" data-i="historyEmpty">Здесь пока пусто. Сохрани свой первый план.</p>
   </div>
 
   <div style="margin-top:18px">
-    <button class="small-btn" id="clearHistoryBtn" data-i="clearHistory">РћР§РРЎРўРРўР¬ РРЎРўРћР РР®</button>
+    <button class="small-btn" id="clearHistoryBtn" data-i="clearHistory">ОЧИСТИТЬ ИСТОРИЮ</button>
   </div>
 </section>
 
 <section class="section reveal" id="about">
   <div class="section-heading">
     <div>
-      <div class="section-kicker" data-i="sectionThree">03 / Р¤РР›РћРЎРћР¤РРЇ</div>
-      <h2 data-i="aboutHeading">РњРµРЅСЊС€Рµ С€СѓРјР°. Р‘РѕР»СЊС€Рµ СЃРјС‹СЃР»Р°.</h2>
+      <div class="section-kicker" data-i="sectionThree">03 / ФИЛОСОФИЯ</div>
+      <h2 data-i="aboutHeading">Меньше шума. Больше смысла.</h2>
     </div>
-    <p data-i="aboutSub">РџСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ, РІ РєРѕС‚РѕСЂРѕРј СЃР»РѕР¶РЅС‹Рµ РІРµС‰Рё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РїРѕРЅСЏС‚РЅРµРµ.</p>
+    <p data-i="aboutSub">Пространство, в котором сложные вещи становятся понятнее.</p>
   </div>
 
   <div class="feature-grid">
     <article class="feature-card">
-      <div class="feature-icon">в—‰</div>
-      <h3 data-i="feature1Title">РЇСЃРЅРѕСЃС‚СЊ</h3>
-      <p data-i="feature1Desc">Р Р°Р·РґРµР»СЏР№ Р±РѕР»СЊС€СѓСЋ РїСЂРѕР±Р»РµРјСѓ РЅР° РЅРµР±РѕР»СЊС€РёРµ Рё РїРѕРЅСЏС‚РЅС‹Рµ С‡Р°СЃС‚Рё.</p>
+      <div class="feature-icon">◉</div>
+      <h3 data-i="feature1Title">Ясность</h3>
+      <p data-i="feature1Desc">Разделяй большую проблему на небольшие и понятные части.</p>
     </article>
     <article class="feature-card">
-      <div class="feature-icon">вЊЃ</div>
-      <h3 data-i="feature2Title">РќР°РїСЂР°РІР»РµРЅРёРµ</h3>
-      <p data-i="feature2Desc">РћРїСЂРµРґРµР»Рё СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі РІРјРµСЃС‚Рѕ РїРѕРїС‹С‚РєРё СЂРµС€РёС‚СЊ РІСЃС‘ СЃСЂР°Р·Сѓ.</p>
+      <div class="feature-icon">⌁</div>
+      <h3 data-i="feature2Title">Направление</h3>
+      <p data-i="feature2Desc">Определи следующий шаг вместо попытки решить всё сразу.</p>
     </article>
     <article class="feature-card">
-      <div class="feature-icon">в€ћ</div>
-      <h3 data-i="feature3Title">Р”РІРёР¶РµРЅРёРµ</h3>
-      <p data-i="feature3Desc">РЎРѕС…СЂР°РЅСЏР№ РїР»Р°РЅС‹, РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє РЅРёРј Рё Р·Р°РјРµС‡Р°Р№ СЃРІРѕР№ РїСЂРѕРіСЂРµСЃСЃ.</p>
+      <div class="feature-icon">∞</div>
+      <h3 data-i="feature3Title">Движение</h3>
+      <p data-i="feature3Desc">Сохраняй планы, возвращайся к ним и замечай свой прогресс.</p>
     </article>
   </div>
 </section>
 
 <section class="quote-section reveal">
-  <div class="quote-mark">вЂњ</div>
-  <h2 data-i="quote">РќРµ РЅСѓР¶РЅРѕ РІРёРґРµС‚СЊ РІСЃСЋ РґРѕСЂРѕРіСѓ. Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕ СѓРІРёРґРµС‚СЊ СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі.</h2>
-  <p>ANTIРҐРђРћРЎ / YOUR SPACE FOR CLARITY</p>
+  <div class="quote-mark">“</div>
+  <h2 data-i="quote">Не нужно видеть всю дорогу. Достаточно увидеть следующий шаг.</h2>
+  <p>ANTIХАОС / YOUR SPACE FOR CLARITY</p>
 </section>
 
 <section class="section reveal" id="creatorSection" style="padding-top:20px">
   <div class="section-heading">
     <div>
-      <div class="section-kicker" data-i="sectionFour">04 / РЎРћР—Р”РђРўР•Р›Р¬</div>
-      <h2 data-i="creatorHeading">Р—Р° РёРґРµРµР№ СЃС‚РѕРёС‚ С‡РµР»РѕРІРµРє.</h2>
+      <div class="section-kicker" data-i="sectionFour">04 / СОЗДАТЕЛЬ</div>
+      <h2 data-i="creatorHeading">За идеей стоит человек.</h2>
     </div>
   </div>
 
   <div class="creator">
-    <div class="creator-avatar">AРҐ</div>
+    <div class="creator-avatar">AХ</div>
     <div>
-      <h3 data-i="creatorName">РЎРѕР·РґР°С‚РµР»СЊ ANTIРҐРђРћРЎ</h3>
-      <p data-i="creatorDesc">РќРµР·Р°РІРёСЃРёРјС‹Р№ Р°РІС‚РѕСЂ РїСЂРѕРµРєС‚Р° В· 17 Р»РµС‚</p>
+      <h3 data-i="creatorName">Создатель ANTIХАОС</h3>
+      <p data-i="creatorDesc">Независимый автор проекта · 17 лет</p>
     </div>
   </div>
 </section>
@@ -1118,9 +1118,9 @@ footer a { color: #999; text-decoration: none; }
 </main>
 
 <footer>
-  <span>В© 2026 ANTIРҐРђРћРЎ</span>
-  <span data-i="footerText">РЎРѕР·РґР°РЅРѕ РґР»СЏ СЏСЃРЅРѕСЃС‚Рё, Р° РЅРµ РґР»СЏ С€СѓРјР°.</span>
-  <a href="#home">BACK TO TOP в†‘</a>
+  <span>© 2026 ANTIХАОС</span>
+  <span data-i="footerText">Создано для ясности, а не для шума.</span>
+  <a href="#home">BACK TO TOP ↑</a>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -1128,126 +1128,126 @@ footer a { color: #999; text-decoration: none; }
 <script>
 const translations = {
 ru: {
-  navHome:"Р“Р»Р°РІРЅР°СЏ", navAI:"РРЅС‚РµР»Р»РµРєС‚", navHistory:"РњРѕРё РїР»Р°РЅС‹", navAbout:"Рћ РїСЂРѕРµРєС‚Рµ",
-  eyebrow:"РџСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ СЏСЃРЅРѕСЃС‚Рё",
-  heroLine1:"РќР°Р№РґРё", heroLine2:"СЃРІРѕР№ РїСѓС‚СЊ.",
-  heroDesc:"РљРѕРіРґР° РјС‹СЃР»Рё РїСЂРµРІСЂР°С‰Р°СЋС‚СЃСЏ РІ С…Р°РѕСЃ, РЅСѓР¶РµРЅ РЅРµ С€СѓРј. РќСѓР¶РЅР° СЏСЃРЅРѕСЃС‚СЊ. Р Р°Р·Р»РѕР¶Рё СЃР»РѕР¶РЅРѕРµ РЅР° РїСЂРѕСЃС‚С‹Рµ С€Р°РіРё Рё РЅР°С‡РЅРё РґРІРёРіР°С‚СЊСЃСЏ РІРїРµСЂС‘Рґ.",
-  startBtn:"РќРђР™РўР РЇРЎРќРћРЎРўР¬ в†—", historyBtn:"РњРћР РџР›РђРќР«",
-  heroNote:"THINK CLEAR В· MOVE FORWARD В· REPEAT",
-  sectionOne:"01 / РџР РћРЎРўР РђРќРЎРўР’Рћ РњР«РЎР›Р•Р™",
-  analyzerHeading:"Р Р°Р·Р»РѕР¶Рё С…Р°РѕСЃ.",
-  analyzerSub:"РћРїРёС€Рё С‚Рѕ, С‡С‚Рѕ С‚РµР±СЏ Р±РµСЃРїРѕРєРѕРёС‚. РќР°С‡РЅС‘Рј СЃ РѕРґРЅРѕРіРѕ РїСЂРµРґР»РѕР¶РµРЅРёСЏ.",
-  analyzerTitle:"РўР’РћРЇ РЎРРўРЈРђР¦РРЇ", systemReady:"РЎРРЎРўР•РњРђ Р“РћРўРћР’Рђ",
-  placeholder:"Р Р°СЃСЃРєР°Р¶Рё, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚. Р§С‚Рѕ С‚РµР±СЏ Р±РµСЃРїРѕРєРѕРёС‚? Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РёР·РјРµРЅРёС‚СЊ...",
-  privateNote:"РЎРѕРѕР±С‰РµРЅРёСЏ РѕС‚РїСЂР°РІР»СЏСЋС‚СЃСЏ РІ Groq РґР»СЏ РѕС‚РІРµС‚Р°. РќРµ РІРІРѕРґРё СЃРµРєСЂРµС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ.",
-  categoryTitle:"Р’Р«Р‘Р•Р Р РќРђРџР РђР’Р›Р•РќРР•",
-  catWork:"Р Р°Р±РѕС‚Р°", catStudy:"РЈС‡С‘Р±Р°", catLife:"Р–РёР·РЅСЊ",
-  catRelations:"РћС‚РЅРѕС€РµРЅРёСЏ", catGrowth:"Р Р°Р·РІРёС‚РёРµ", catOther:"Р”СЂСѓРіРѕРµ",
-  analyzeHint:"РќРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ С„РѕСЂРјСѓР»РёСЂРѕРІР°С‚СЊ РёРґРµР°Р»СЊРЅРѕ.",
-  analyzeBtn:"Р РђР—РћР‘Р РђРўР¬РЎРЇ в†—", copyBtn:"РљРћРџРР РћР’РђРўР¬ РџР›РђРќ",
-  saveBtn:"РЎРћРҐР РђРќРРўР¬", newBtn:"РќРћР’Р«Р™ РђРќРђР›РР—",
-  sectionTwo:"02 / РўР’РћР™ РџР РћР“Р Р•РЎРЎ", historyHeading:"РњРѕРё РїР»Р°РЅС‹.",
-  historySub:"РЎРѕС…СЂР°РЅСЏР№ СЃРІРѕРё СЂРµС€РµРЅРёСЏ Рё РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє РЅРёРј, РєРѕРіРґР° РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.",
-  historyEmpty:"Р—РґРµСЃСЊ РїРѕРєР° РїСѓСЃС‚Рѕ. РЎРѕС…СЂР°РЅРё СЃРІРѕР№ РїРµСЂРІС‹Р№ РїР»Р°РЅ.",
-  clearHistory:"РћР§РРЎРўРРўР¬ РРЎРўРћР РР®",
-  sectionThree:"03 / Р¤РР›РћРЎРћР¤РРЇ",
-  aboutHeading:"РњРµРЅСЊС€Рµ С€СѓРјР°. Р‘РѕР»СЊС€Рµ СЃРјС‹СЃР»Р°.",
-  aboutSub:"РџСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ, РІ РєРѕС‚РѕСЂРѕРј СЃР»РѕР¶РЅС‹Рµ РІРµС‰Рё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РїРѕРЅСЏС‚РЅРµРµ.",
-  feature1Title:"РЇСЃРЅРѕСЃС‚СЊ", feature1Desc:"Р Р°Р·РґРµР»СЏР№ Р±РѕР»СЊС€СѓСЋ РїСЂРѕР±Р»РµРјСѓ РЅР° РЅРµР±РѕР»СЊС€РёРµ Рё РїРѕРЅСЏС‚РЅС‹Рµ С‡Р°СЃС‚Рё.",
-  feature2Title:"РќР°РїСЂР°РІР»РµРЅРёРµ", feature2Desc:"РћРїСЂРµРґРµР»Рё СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі РІРјРµСЃС‚Рѕ РїРѕРїС‹С‚РєРё СЂРµС€РёС‚СЊ РІСЃС‘ СЃСЂР°Р·Сѓ.",
-  feature3Title:"Р”РІРёР¶РµРЅРёРµ", feature3Desc:"РЎРѕС…СЂР°РЅСЏР№ РїР»Р°РЅС‹, РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє РЅРёРј Рё Р·Р°РјРµС‡Р°Р№ СЃРІРѕР№ РїСЂРѕРіСЂРµСЃСЃ.",
-  quote:"РќРµ РЅСѓР¶РЅРѕ РІРёРґРµС‚СЊ РІСЃСЋ РґРѕСЂРѕРіСѓ. Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕ СѓРІРёРґРµС‚СЊ СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі.",
-  sectionFour:"04 / РЎРћР—Р”РђРўР•Р›Р¬", creatorHeading:"Р—Р° РёРґРµРµР№ СЃС‚РѕРёС‚ С‡РµР»РѕРІРµРє.",
-  creatorName:"РЎРѕР·РґР°С‚РµР»СЊ ANTIРҐРђРћРЎ",
-  creatorDesc:"РќРµР·Р°РІРёСЃРёРјС‹Р№ Р°РІС‚РѕСЂ РїСЂРѕРµРєС‚Р° В· 17 Р»РµС‚",
-  footerText:"РЎРѕР·РґР°РЅРѕ РґР»СЏ СЏСЃРЅРѕСЃС‚Рё, Р° РЅРµ РґР»СЏ С€СѓРјР°.",
-  emptyError:"РЎРЅР°С‡Р°Р»Р° СЂР°СЃСЃРєР°Р¶Рё, С‡С‚Рѕ С‚РµР±СЏ Р±РµСЃРїРѕРєРѕРёС‚.",
-  vagueError:"РџРѕРїСЂРѕР±СѓР№ РґРѕР±Р°РІРёС‚СЊ РЅРµРјРЅРѕРіРѕ РґРµС‚Р°Р»РµР№: С‡С‚Рѕ РёРјРµРЅРЅРѕ РїСЂРѕРёР·РѕС€Р»Рѕ Рё С‡РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ РґРѕР±РёС‚СЊСЃСЏ?",
-  urgentTitle:"РЎРЅР°С‡Р°Р»Р° РїРѕР·Р°Р±РѕС‚СЊСЃСЏ Рѕ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.",
-  urgentIntro:"РџРѕС…РѕР¶Рµ, СЃРёС‚СѓР°С†РёСЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃСЂРѕС‡РЅРѕР№. Р•СЃР»Рё СЃСѓС‰РµСЃС‚РІСѓРµС‚ РЅРµРїРѕСЃСЂРµРґСЃС‚РІРµРЅРЅР°СЏ РѕРїР°СЃРЅРѕСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РёР»Рё РґСЂСѓРіРѕРіРѕ С‡РµР»РѕРІРµРєР°, РѕР±СЂР°С‚РёСЃСЊ РІ РјРµСЃС‚РЅСѓСЋ СЌРєСЃС‚СЂРµРЅРЅСѓСЋ СЃР»СѓР¶Р±Сѓ РёР»Рё Рє С‡РµР»РѕРІРµРєСѓ, РєРѕС‚РѕСЂРѕРјСѓ РґРѕРІРµСЂСЏРµС€СЊ. РќРµ РѕСЃС‚Р°РІР°Р№СЃСЏ СЃ СЌС‚РёРј РІ РѕРґРёРЅРѕС‡РєСѓ.",
-  resultTitle:"РќР°С‡РЅС‘Рј СЃ РјР°Р»РѕРіРѕ.",
-  resultIntro:"РќРµ РїС‹С‚Р°Р№СЃСЏ СЂРµС€РёС‚СЊ РІСЃС‘ Р·Р° РѕРґРёРЅ СЂР°Р·. Р’РѕС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ, СЃ РєРѕС‚РѕСЂРѕР№ РјРѕР¶РЅРѕ РЅР°С‡Р°С‚СЊ.",
+  navHome:"Главная", navAI:"Интеллект", navHistory:"Мои планы", navAbout:"О проекте",
+  eyebrow:"Пространство ясности",
+  heroLine1:"Найди", heroLine2:"свой путь.",
+  heroDesc:"Когда мысли превращаются в хаос, нужен не шум. Нужна ясность. Разложи сложное на простые шаги и начни двигаться вперёд.",
+  startBtn:"НАЙТИ ЯСНОСТЬ ↗", historyBtn:"МОИ ПЛАНЫ",
+  heroNote:"THINK CLEAR · MOVE FORWARD · REPEAT",
+  sectionOne:"01 / ПРОСТРАНСТВО МЫСЛЕЙ",
+  analyzerHeading:"Разложи хаос.",
+  analyzerSub:"Опиши то, что тебя беспокоит. Начнём с одного предложения.",
+  analyzerTitle:"ТВОЯ СИТУАЦИЯ", systemReady:"СИСТЕМА ГОТОВА",
+  placeholder:"Расскажи, что происходит. Что тебя беспокоит? Что ты хочешь изменить...",
+  privateNote:"Сообщения отправляются в Groq для ответа. Не вводи секретные данные.",
+  categoryTitle:"ВЫБЕРИ НАПРАВЛЕНИЕ",
+  catWork:"Работа", catStudy:"Учёба", catLife:"Жизнь",
+  catRelations:"Отношения", catGrowth:"Развитие", catOther:"Другое",
+  analyzeHint:"Не обязательно формулировать идеально.",
+  analyzeBtn:"РАЗОБРАТЬСЯ ↗", copyBtn:"КОПИРОВАТЬ ПЛАН",
+  saveBtn:"СОХРАНИТЬ", newBtn:"НОВЫЙ АНАЛИЗ",
+  sectionTwo:"02 / ТВОЙ ПРОГРЕСС", historyHeading:"Мои планы.",
+  historySub:"Сохраняй свои решения и возвращайся к ним, когда понадобится.",
+  historyEmpty:"Здесь пока пусто. Сохрани свой первый план.",
+  clearHistory:"ОЧИСТИТЬ ИСТОРИЮ",
+  sectionThree:"03 / ФИЛОСОФИЯ",
+  aboutHeading:"Меньше шума. Больше смысла.",
+  aboutSub:"Пространство, в котором сложные вещи становятся понятнее.",
+  feature1Title:"Ясность", feature1Desc:"Разделяй большую проблему на небольшие и понятные части.",
+  feature2Title:"Направление", feature2Desc:"Определи следующий шаг вместо попытки решить всё сразу.",
+  feature3Title:"Движение", feature3Desc:"Сохраняй планы, возвращайся к ним и замечай свой прогресс.",
+  quote:"Не нужно видеть всю дорогу. Достаточно увидеть следующий шаг.",
+  sectionFour:"04 / СОЗДАТЕЛЬ", creatorHeading:"За идеей стоит человек.",
+  creatorName:"Создатель ANTIХАОС",
+  creatorDesc:"Независимый автор проекта · 17 лет",
+  footerText:"Создано для ясности, а не для шума.",
+  emptyError:"Сначала расскажи, что тебя беспокоит.",
+  vagueError:"Попробуй добавить немного деталей: что именно произошло и чего ты хочешь добиться?",
+  urgentTitle:"Сначала позаботься о безопасности.",
+  urgentIntro:"Похоже, ситуация может быть срочной. Если существует непосредственная опасность для тебя или другого человека, обратись в местную экстренную службу или к человеку, которому доверяешь. Не оставайся с этим в одиночку.",
+  resultTitle:"Начнём с малого.",
+  resultIntro:"Не пытайся решить всё за один раз. Вот последовательность, с которой можно начать.",
   steps:[
-    ["РћСЃС‚Р°РЅРѕРІРёСЃСЊ Рё РѕРїРёС€Рё СЃРёС‚СѓР°С†РёСЋ","Р—Р°РїРёС€Рё С„Р°РєС‚С‹ РѕС‚РґРµР»СЊРЅРѕ РѕС‚ РїСЂРµРґРїРѕР»РѕР¶РµРЅРёР№. Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РЅР° СЃР°РјРѕРј РґРµР»Рµ?"],
-    ["РћРїСЂРµРґРµР»Рё РіР»Р°РІРЅРѕРµ","Р’С‹Р±РµСЂРё РѕРґРЅСѓ РїСЂРѕР±Р»РµРјСѓ, РєРѕС‚РѕСЂР°СЏ СЃРёР»СЊРЅРµРµ РІСЃРµРіРѕ РІР»РёСЏРµС‚ РЅР° СЃРёС‚СѓР°С†РёСЋ."],
-    ["Р Р°Р·РґРµР»Рё РµС‘ РЅР° С‡Р°СЃС‚Рё","Р—Р°РїРёС€Рё, С‡С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РµР±СЏ, Р° С‡С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РІРЅРµ С‚РІРѕРµРіРѕ РєРѕРЅС‚СЂРѕР»СЏ."],
-    ["Р’С‹Р±РµСЂРё РЅРµР±РѕР»СЊС€РѕР№ С€Р°Рі","РќР°Р№РґРё РґРµР№СЃС‚РІРёРµ, РєРѕС‚РѕСЂРѕРµ РјРѕР¶РЅРѕ РІС‹РїРѕР»РЅРёС‚СЊ Р·Р° 10вЂ“20 РјРёРЅСѓС‚."],
-    ["РћРїСЂРµРґРµР»Рё СЃСЂРѕРє","Р РµС€Рё, РєРѕРіРґР° РёРјРµРЅРЅРѕ С‚С‹ СЃРґРµР»Р°РµС€СЊ СЌС‚РѕС‚ С€Р°Рі. РќРµ РѕС‚РєР»Р°РґС‹РІР°Р№ Р±РµР· РїСЂРёС‡РёРЅС‹."],
-    ["РџСЂРѕРІРµСЂСЊ СЂРµР·СѓР»СЊС‚Р°С‚","РџРѕСЃРјРѕС‚СЂРё, С‡С‚Рѕ РёР·РјРµРЅРёР»РѕСЃСЊ, Рё СЃРєРѕСЂСЂРµРєС‚РёСЂСѓР№ СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі."]
+    ["Остановись и опиши ситуацию","Запиши факты отдельно от предположений. Что произошло на самом деле?"],
+    ["Определи главное","Выбери одну проблему, которая сильнее всего влияет на ситуацию."],
+    ["Раздели её на части","Запиши, что зависит от тебя, а что находится вне твоего контроля."],
+    ["Выбери небольшой шаг","Найди действие, которое можно выполнить за 10–20 минут."],
+    ["Определи срок","Реши, когда именно ты сделаешь этот шаг. Не откладывай без причины."],
+    ["Проверь результат","Посмотри, что изменилось, и скорректируй следующий шаг."]
   ],
   urgentSteps:[
-    ["РќР°Р№РґРё Р±РµР·РѕРїР°СЃРЅРѕРµ РјРµСЃС‚Рѕ","Р•СЃР»Рё СЂСЏРґРѕРј РµСЃС‚СЊ РѕРїР°СЃРЅРѕСЃС‚СЊ, РїРѕСЃС‚Р°СЂР°Р№СЃСЏ РїРµСЂРµР№С‚Рё С‚СѓРґР°, РіРґРµ С‚РµР±Рµ Р±РµР·РѕРїР°СЃРЅРµРµ."],
-    ["РЎРІСЏР¶РёСЃСЊ СЃ С‡РµР»РѕРІРµРєРѕРј","РџРѕР·РІРѕРЅРё Р±Р»РёР·РєРѕРјСѓ С‡РµР»РѕРІРµРєСѓ, РєРѕС‚РѕСЂРѕРјСѓ РґРѕРІРµСЂСЏРµС€СЊ, РёР»Рё РїРѕРїСЂРѕСЃРё РїРѕРјРѕС‰Рё Р»РёС‡РЅРѕ."],
-    ["РћР±СЂР°С‚РёСЃСЊ Р·Р° СЃСЂРѕС‡РЅРѕР№ РїРѕРјРѕС‰СЊСЋ","РџСЂРё РЅРµРїРѕСЃСЂРµРґСЃС‚РІРµРЅРЅРѕР№ СѓРіСЂРѕР·Рµ СЃРІСЏР¶РёСЃСЊ СЃ РјРµСЃС‚РЅРѕР№ СЌРєСЃС‚СЂРµРЅРЅРѕР№ СЃР»СѓР¶Р±РѕР№."]
+    ["Найди безопасное место","Если рядом есть опасность, постарайся перейти туда, где тебе безопаснее."],
+    ["Свяжись с человеком","Позвони близкому человеку, которому доверяешь, или попроси помощи лично."],
+    ["Обратись за срочной помощью","При непосредственной угрозе свяжись с местной экстренной службой."]
   ],
-  saved:"РџР»Р°РЅ СЃРѕС…СЂР°РЅС‘РЅ.", copied:"РџР»Р°РЅ СЃРєРѕРїРёСЂРѕРІР°РЅ.", deleted:"РСЃС‚РѕСЂРёСЏ РѕС‡РёС‰РµРЅР°.",
-  confirmClear:"РЈРґР°Р»РёС‚СЊ РІСЃСЋ РёСЃС‚РѕСЂРёСЋ СЃРѕС…СЂР°РЅС‘РЅРЅС‹С… РїР»Р°РЅРѕРІ?",
-  historyOpen:"РћРўРљР Р«РўР¬", historyDate:"РЎРѕС…СЂР°РЅРµРЅРѕ",
-  loaded:"РџР»Р°РЅ РѕС‚РєСЂС‹С‚.", newAnalysis:"РџРѕР»Рµ РѕС‡РёС‰РµРЅРѕ.",
-  noClipboard:"РќРµ СѓРґР°Р»РѕСЃСЊ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. Р’С‹РґРµР»Рё С‚РµРєСЃС‚ РїР»Р°РЅР° РІСЂСѓС‡РЅСѓСЋ.",
-  urgentBadge:"Р’РћР—РњРћР–РќРћ РЎР РћР§РќРђРЇ РЎРРўРЈРђР¦РРЇ",
-  priority:"РЁР°Рі"
+  saved:"План сохранён.", copied:"План скопирован.", deleted:"История очищена.",
+  confirmClear:"Удалить всю историю сохранённых планов?",
+  historyOpen:"ОТКРЫТЬ", historyDate:"Сохранено",
+  loaded:"План открыт.", newAnalysis:"Поле очищено.",
+  noClipboard:"Не удалось скопировать автоматически. Выдели текст плана вручную.",
+  urgentBadge:"ВОЗМОЖНО СРОЧНАЯ СИТУАЦИЯ",
+  priority:"Шаг"
 },
 ko: {
-  navHome:"н™€", navAI:"л¶„м„ќ", navHistory:"л‚ґ кі„нљЌ", navAbout:"м†Њк°њ",
-  eyebrow:"лЄ…н™•н•Ёмќ кіµк°„",
-  heroLine1:"мћђм‹ мќ", heroLine2:"кёёмќ„ м°ѕм•„.",
-  heroDesc:"мѓќк°Ѓмќґ нјлћЂмЉ¤лџ¬мљё л•Њ н•„мљ”н•њ кІѓмќЂ лЌ” л§ЋмќЂ м†ЊмќЊмќґ м•„л‹™л‹€л‹¤. лЄ…н™•н•Ёмћ…л‹€л‹¤. ліµмћЎн•њ мќјмќ„ мћ‘мќЂ л‹Ёкі„лЎњ л‚л€„кі  м•ћмњјлЎњ л‚м•„к°Ђм„ёмљ”.",
-  startBtn:"лЄ…н™•н•Ё м°ѕкё° в†—", historyBtn:"л‚ґ кі„нљЌ",
-  heroNote:"THINK CLEAR В· MOVE FORWARD В· REPEAT",
-  sectionOne:"01 / мѓќк°Ѓмќ кіµк°„",
-  analyzerHeading:"нјлћЂмќ„ м •л¦¬н•м„ёмљ”.",
-  analyzerSub:"к±±м •лђлЉ” мќјмќ„ м„¤лЄ…н•ґ ліґм„ёмљ”. н•њ л¬ёмћҐл¶Ђн„° м‹њмћ‘н•ґлЏ„ мў‹мЉµл‹€л‹¤.",
-  analyzerTitle:"н„мћ¬ мѓЃн™©", systemReady:"м‹њмЉ¤н…њ м¤Ђл№„ м™„лЈЊ",
-  placeholder:"л¬ґмЉЁ мќјмќґ мќјм–ґл‚кі  мћ€л‚мљ”? л¬ґм—‡мќґ к±±м •лђл‚мљ”? л¬ґм—‡мќ„ л°”кѕёкі  м‹¶л‚мљ”...",
-  privateNote:"л‹µліЂ мѓќм„±мќ„ мњ„н•ґ л©”м‹њм§Ђк°Ђ GroqлЎњ м „м†Ўлђ©л‹€л‹¤. л№„л°Ђ м •ліґлЉ” мћ…л Ґн•м§Ђ л§€м„ёмљ”.",
-  categoryTitle:"л¶„м•ј м„ нѓќ",
-  catWork:"мќј", catStudy:"кіµл¶Ђ", catLife:"мѓќн™њ",
-  catRelations:"кґЂкі„", catGrowth:"м„±мћҐ", catOther:"кё°нѓЂ",
-  analyzeHint:"м™„лІЅн•кІЊ м„¤лЄ…н•  н•„мљ”лЉ” м—†мЉµл‹€л‹¤.",
-  analyzeBtn:"м •л¦¬н•кё° в†—", copyBtn:"кі„нљЌ ліµм‚¬",
-  saveBtn:"м ЂмћҐ", newBtn:"мѓ€ л¶„м„ќ",
-  sectionTwo:"02 / м§„н–‰ мѓЃн™©", historyHeading:"л‚ґ кі„нљЌ.",
-  historySub:"кІ°м •мќ„ м ЂмћҐн•кі  н•„мљ”н•  л•Њ л‹¤м‹њ н™•мќён•м„ёмљ”.",
-  historyEmpty:"м•„м§Ѓ л№„м–ґ мћ€мЉµл‹€л‹¤. мІ« лІ€м§ё кі„нљЌмќ„ м ЂмћҐн•ґ ліґм„ёмљ”.",
-  clearHistory:"кё°лЎќ м§Ђмљ°кё°",
-  sectionThree:"03 / мІ н•™",
-  aboutHeading:"м†ЊмќЊмќЂ м¤„мќґкі  мќлЇёлЉ” лЌ”н•м„ёмљ”.",
-  aboutSub:"ліµмћЎн•њ мќјмќ„ лЌ” м‰ЅкІЊ мќґн•ґн•  м€ мћ€лЉ” кіµк°„мћ…л‹€л‹¤.",
-  feature1Title:"лЄ…н™•н•Ё", feature1Desc:"нЃ° л¬ём њлҐј мћ‘кі  мќґн•ґн•кё° м‰¬мљґ л¶Ђл¶„мњјлЎњ л‚л€„м„ёмљ”.",
-  feature2Title:"л°©н–Ґ", feature2Desc:"лЄЁл“  кІѓмќ„ н•њ лІ€м—ђ н•ґкІ°н•л ¤ н•м§Ђ л§ђкі  л‹¤мќЊ л‹Ёкі„лҐј м •н•м„ёмљ”.",
-  feature3Title:"м „м§„", feature3Desc:"кі„нљЌмќ„ м ЂмћҐн•кі  м§„н–‰ мѓЃн™©мќ„ н™•мќён•м„ёмљ”.",
-  quote:"м „мІґ кёёмќ„ ліј н•„мљ”лЉ” м—†мЉµл‹€л‹¤. л‹¤мќЊ н•њ к±ёмќЊмќґл©ґ м¶©л¶„н•©л‹€л‹¤.",
-  sectionFour:"04 / м њмћ‘мћђ", creatorHeading:"м•„мќґл””м–ґ л’¤м—ђлЉ” м‚¬лћЊмќґ мћ€мЉµл‹€л‹¤.",
-  creatorName:"ANTIРҐРђРћРЎ м њмћ‘мћђ",
-  creatorDesc:"лЏ…л¦Ѕ н”„лЎњм ќнЉё м њмћ‘мћђ В· 17м„ё",
-  footerText:"м†ЊмќЊмќґ м•„л‹Њ лЄ…н™•н•Ёмќ„ мњ„н•ґ л§Њл“¤м—€мЉµл‹€л‹¤.",
-  emptyError:"лЁјм Ђ к±±м •лђлЉ” мќјмќ„ м Ѓм–ґ мЈјм„ёмљ”.",
-  vagueError:"л¬ґмЉЁ мќјмќґ мћ€м—€лЉ”м§Ђ, л¬ґм—‡мќ„ мќґлЈЁкі  м‹¶мќЂм§Ђ мЎ°кё€ лЌ” м„¤лЄ…н•ґ мЈјм„ёмљ”.",
-  urgentTitle:"лЁјм Ђ м•€м „мќ„ н™•ліґн•м„ёмљ”.",
-  urgentIntro:"кёґкё‰н•њ мѓЃн™©мќј м€ мћ€мЉµл‹€л‹¤. мћђм‹ мќґл‚ л‹¤лҐё м‚¬лћЊмќґ м¦‰к°Ѓм Ѓмќё мњ„н—м—ђ мІн•ґ мћ€л‹¤л©ґ н„м§Ђ кёґкё‰ кµ¬мЎ° кё°кґЂмќґл‚ м‹ лў°н•  м€ мћ€лЉ” м‚¬лћЊм—ђкІЊ лЏ„м›Ђмќ„ мљ”мІ­н•м„ёмљ”.",
-  resultTitle:"мћ‘мќЂ кІѓл¶Ђн„° м‹њмћ‘н•м„ёмљ”.",
-  resultIntro:"лЄЁл“  кІѓмќ„ н•њ лІ€м—ђ н•ґкІ°н•л ¤ н•м§Ђ л§€м„ёмљ”. л‹¤мќЊ м€њм„њлЎњ м‹њмћ‘н•  м€ мћ€мЉµл‹€л‹¤.",
+  navHome:"홈", navAI:"분석", navHistory:"내 계획", navAbout:"소개",
+  eyebrow:"명확함의 공간",
+  heroLine1:"자신의", heroLine2:"길을 찾아.",
+  heroDesc:"생각이 혼란스러울 때 필요한 것은 더 많은 소음이 아닙니다. 명확함입니다. 복잡한 일을 작은 단계로 나누고 앞으로 나아가세요.",
+  startBtn:"명확함 찾기 ↗", historyBtn:"내 계획",
+  heroNote:"THINK CLEAR · MOVE FORWARD · REPEAT",
+  sectionOne:"01 / 생각의 공간",
+  analyzerHeading:"혼란을 정리하세요.",
+  analyzerSub:"걱정되는 일을 설명해 보세요. 한 문장부터 시작해도 좋습니다.",
+  analyzerTitle:"현재 상황", systemReady:"시스템 준비 완료",
+  placeholder:"무슨 일이 일어나고 있나요? 무엇이 걱정되나요? 무엇을 바꾸고 싶나요...",
+  privateNote:"답변 생성을 위해 메시지가 Groq로 전송됩니다. 비밀 정보는 입력하지 마세요.",
+  categoryTitle:"분야 선택",
+  catWork:"일", catStudy:"공부", catLife:"생활",
+  catRelations:"관계", catGrowth:"성장", catOther:"기타",
+  analyzeHint:"완벽하게 설명할 필요는 없습니다.",
+  analyzeBtn:"정리하기 ↗", copyBtn:"계획 복사",
+  saveBtn:"저장", newBtn:"새 분석",
+  sectionTwo:"02 / 진행 상황", historyHeading:"내 계획.",
+  historySub:"결정을 저장하고 필요할 때 다시 확인하세요.",
+  historyEmpty:"아직 비어 있습니다. 첫 번째 계획을 저장해 보세요.",
+  clearHistory:"기록 지우기",
+  sectionThree:"03 / 철학",
+  aboutHeading:"소음은 줄이고 의미는 더하세요.",
+  aboutSub:"복잡한 일을 더 쉽게 이해할 수 있는 공간입니다.",
+  feature1Title:"명확함", feature1Desc:"큰 문제를 작고 이해하기 쉬운 부분으로 나누세요.",
+  feature2Title:"방향", feature2Desc:"모든 것을 한 번에 해결하려 하지 말고 다음 단계를 정하세요.",
+  feature3Title:"전진", feature3Desc:"계획을 저장하고 진행 상황을 확인하세요.",
+  quote:"전체 길을 볼 필요는 없습니다. 다음 한 걸음이면 충분합니다.",
+  sectionFour:"04 / 제작자", creatorHeading:"아이디어 뒤에는 사람이 있습니다.",
+  creatorName:"ANTIХАОС 제작자",
+  creatorDesc:"독립 프로젝트 제작자 · 17세",
+  footerText:"소음이 아닌 명확함을 위해 만들었습니다.",
+  emptyError:"먼저 걱정되는 일을 적어 주세요.",
+  vagueError:"무슨 일이 있었는지, 무엇을 이루고 싶은지 조금 더 설명해 주세요.",
+  urgentTitle:"먼저 안전을 확보하세요.",
+  urgentIntro:"긴급한 상황일 수 있습니다. 자신이나 다른 사람이 즉각적인 위험에 처해 있다면 현지 긴급 구조 기관이나 신뢰할 수 있는 사람에게 도움을 요청하세요.",
+  resultTitle:"작은 것부터 시작하세요.",
+  resultIntro:"모든 것을 한 번에 해결하려 하지 마세요. 다음 순서로 시작할 수 있습니다.",
   steps:[
-    ["мѓЃн™©мќ„ м„¤лЄ…н•м„ёмљ”","м‚¬м‹¤кіј м¶”мёЎмќ„ л‚л€„м–ґ м Ѓм–ґ ліґм„ёмљ”. м‹¤м њлЎњ л¬ґмЉЁ мќјмќґ мћ€м—€л‚мљ”?"],
-    ["к°ЂмћҐ м¤‘мљ”н•њ кІѓмќ„ м •н•м„ёмљ”","мѓЃн™©м—ђ к°ЂмћҐ нЃ° мЃн–Ґмќ„ мЈјлЉ” л¬ём њ н•л‚лҐј м„ нѓќн•м„ёмљ”."],
-    ["л¬ём њлҐј л‚л€„м„ёмљ”","мћђм‹ мќґ л°”кїЂ м€ мћ€лЉ” кІѓкіј н†µм њн•  м€ м—†лЉ” кІѓмќ„ кµ¬л¶„н•м„ёмљ”."],
-    ["мћ‘мќЂ н–‰лЏ™мќ„ м„ нѓќн•м„ёмљ”","10~20л¶„ м•€м—ђ н•  м€ мћ€лЉ” н–‰лЏ™мќ„ м°ѕм•„ліґм„ёмљ”."],
-    ["кё°н•њмќ„ м •н•м„ёмљ”","м–ём њ н–‰лЏ™н• м§Ђ м •н•кі  л¶€н•„мљ”н•кІЊ лЇёлЈЁм§Ђ л§€м„ёмљ”."],
-    ["кІ°кіјлҐј н™•мќён•м„ёмљ”","л¬ґм—‡мќґ л‹¬лќјмЎЊлЉ”м§Ђ м‚ґнЋґліґкі  л‹¤мќЊ л‹Ёкі„лҐј мЎ°м •н•м„ёмљ”."]
+    ["상황을 설명하세요","사실과 추측을 나누어 적어 보세요. 실제로 무슨 일이 있었나요?"],
+    ["가장 중요한 것을 정하세요","상황에 가장 큰 영향을 주는 문제 하나를 선택하세요."],
+    ["문제를 나누세요","자신이 바꿀 수 있는 것과 통제할 수 없는 것을 구분하세요."],
+    ["작은 행동을 선택하세요","10~20분 안에 할 수 있는 행동을 찾아보세요."],
+    ["기한을 정하세요","언제 행동할지 정하고 불필요하게 미루지 마세요."],
+    ["결과를 확인하세요","무엇이 달라졌는지 살펴보고 다음 단계를 조정하세요."]
   ],
   urgentSteps:[
-    ["м•€м „н•њ мћҐм†ЊлЎњ мќґлЏ™н•м„ёмљ”","мњ„н—мќґ к°Ђк№Њмќґ мћ€л‹¤л©ґ лЌ” м•€м „н•њ кіімњјлЎњ мќґлЏ™н•м„ёмљ”."],
-    ["лЇїмќ„ м€ мћ€лЉ” м‚¬лћЊм—ђкІЊ м—°лќЅн•м„ёмљ”","к°Ђк№Њмљґ м‚¬лћЊм—ђкІЊ м „н™”н•к±°л‚ м§Ѓм ‘ лЏ„м›Ђмќ„ мљ”мІ­н•м„ёмљ”."],
-    ["кёґкё‰ м§Ђм›ђмќ„ мљ”мІ­н•м„ёмљ”","м¦‰к°Ѓм Ѓмќё мњ„н—мќґ мћ€л‹¤л©ґ н„м§Ђ кёґкё‰ кµ¬мЎ° кё°кґЂм—ђ м—°лќЅн•м„ёмљ”."]
+    ["안전한 장소로 이동하세요","위험이 가까이 있다면 더 안전한 곳으로 이동하세요."],
+    ["믿을 수 있는 사람에게 연락하세요","가까운 사람에게 전화하거나 직접 도움을 요청하세요."],
+    ["긴급 지원을 요청하세요","즉각적인 위험이 있다면 현지 긴급 구조 기관에 연락하세요."]
   ],
-  saved:"кі„нљЌмќґ м ЂмћҐлђм—€мЉµл‹€л‹¤.", copied:"кі„нљЌмќґ ліµм‚¬лђм—€мЉµл‹€л‹¤.", deleted:"кё°лЎќмќґ м‚­м њлђм—€мЉµл‹€л‹¤.",
-  confirmClear:"м ЂмћҐлђњ лЄЁл“  кі„нљЌмќ„ м‚­м њн• к№Њмљ”?",
-  historyOpen:"м—ґкё°", historyDate:"м ЂмћҐлђЁ",
-  loaded:"кі„нљЌмќ„ м—ґм—€мЉµл‹€л‹¤.", newAnalysis:"мћ…л ҐлћЂмќґ л№„м›ЊмЎЊмЉµл‹€л‹¤.",
-  noClipboard:"мћђлЏ™ ліµм‚¬м—ђ м‹¤нЊЁн–€мЉµл‹€л‹¤. кі„нљЌмќ„ м§Ѓм ‘ м„ нѓќн•ґ мЈјм„ёмљ”.",
-  urgentBadge:"кёґкё‰ мѓЃн™©мќј м€ мћ€мЉµл‹€л‹¤",
-  priority:"л‹Ёкі„"
+  saved:"계획이 저장되었습니다.", copied:"계획이 복사되었습니다.", deleted:"기록이 삭제되었습니다.",
+  confirmClear:"저장된 모든 계획을 삭제할까요?",
+  historyOpen:"열기", historyDate:"저장됨",
+  loaded:"계획을 열었습니다.", newAnalysis:"입력란이 비워졌습니다.",
+  noClipboard:"자동 복사에 실패했습니다. 계획을 직접 선택해 주세요.",
+  urgentBadge:"긴급 상황일 수 있습니다",
+  priority:"단계"
 }
 };
 
@@ -1310,11 +1310,11 @@ document.querySelectorAll(".category").forEach(button => {
 });
 
 const categoryWords = {
-  work: ["СЂР°Р±РѕС‚","СЂР°Р±РѕС‚Р°","РєР°СЂСЊРµСЂ","Р±РёР·РЅРµСЃ","РЅР°С‡Р°Р»СЊРЅРёРє","РєРѕР»Р»РµРі","РґРµРЅСЊРі","СЂР°Р±РѕС‚Р°С‚СЊ","job","work","career","boss"],
-  study: ["СѓС‡С‘Р±","СѓС‡РµР±","СЌРєР·Р°РјРµРЅ","С€РєРѕР»","СѓРЅРёРІРµСЂСЃРёС‚РµС‚","РѕС†РµРЅРє","РґРѕРјР°С€РЅ","study","school","exam","university"],
-  relations: ["РѕС‚РЅРѕС€","РґРµРІСѓС€","РїР°СЂРЅ","РґСЂСѓРі","СЃРµРјСЊ","СЂРѕРґРёС‚РµР»","Р»СЋР±РѕРІ","СЃСЃРѕСЂ","relationship","friend","family"],
-  growth: ["СЂР°Р·РІРёС‚Рё","С†РµР»СЊ","РїСЂРёРІС‹С‡","РјРѕС‚РёРІР°С†","Р±СѓРґСѓС‰","СЃР°РјРѕРѕС†РµРЅ","РґРёСЃС†РёРїР»РёРЅ","goal","habit","motivation","future"],
-  life: ["Р¶РёР·РЅ","СѓСЃС‚Р°Р»","СЃС‚СЂРµСЃСЃ","РІСЂРµРјСЏ","СЂРµР¶РёРј","РѕРґРёРЅРѕС‡","С‚СЂРµРІРѕРі","life","stress","tired","time"]
+  work: ["работ","работа","карьер","бизнес","начальник","коллег","деньг","работать","job","work","career","boss"],
+  study: ["учёб","учеб","экзамен","школ","университет","оценк","домашн","study","school","exam","university"],
+  relations: ["отнош","девуш","парн","друг","семь","родител","любов","ссор","relationship","friend","family"],
+  growth: ["развити","цель","привыч","мотивац","будущ","самооцен","дисциплин","goal","habit","motivation","future"],
+  life: ["жизн","устал","стресс","время","режим","одиноч","тревог","life","stress","tired","time"]
 };
 
 function detectCategory(text) {
@@ -1337,19 +1337,19 @@ function detectCategory(text) {
 
 function isUrgent(text) {
   const patterns = [
-    /С…РѕС‡Сѓ\s+СѓРјРµСЂРµС‚СЊ/i, /РЅРµ\s+С…РѕС‡Сѓ\s+Р¶РёС‚СЊ/i, /РїРѕРєРѕРЅС‡РёС‚СЊ\s+СЃ\s+СЃРѕР±РѕР№/i,
-    /СѓР±РёС‚СЊ\s+СЃРµР±СЏ/i, /РїСЂРёС‡РёРЅРёС‚СЊ\s+СЃРµР±Рµ\s+РІСЂРµРґ/i, /РјРЅРµ\s+СѓРіСЂРѕР¶Р°СЋС‚/i,
-    /РјРµРЅСЏ\s+РёР·Р±РёРІР°СЋС‚/i, /РЅР°СЃРёР»РёРµ/i, /СЃСѓРёС†РёРґ/i,
+    /хочу\s+умереть/i, /не\s+хочу\s+жить/i, /покончить\s+с\s+собой/i,
+    /убить\s+себя/i, /причинить\s+себе\s+вред/i, /мне\s+угрожают/i,
+    /меня\s+избивают/i, /насилие/i, /суицид/i,
     /i want to die/i, /kill myself/i, /hurt myself/i,
     /want to end my life/i,
-    /мћђм‚ґ/i, /мЈЅкі  м‹¶/i, /мћђн•ґ/i
+    /자살/i, /죽고 싶/i, /자해/i
   ];
   return patterns.some(pattern => pattern.test(text));
 }
 
 function isVague(text) {
   const words = text.trim().split(/\s+/);
-  return words.length < 4 || /РЅРµ Р·РЅР°СЋ С‡С‚Рѕ РґРµР»Р°С‚СЊ|РїРѕРјРѕРіРё РјРЅРµ|РІСЃС‘ РїР»РѕС…Рѕ|РІСЃРµ РїР»РѕС…Рѕ|help me|i don't know/i.test(text);
+  return words.length < 4 || /не знаю что делать|помоги мне|всё плохо|все плохо|help me|i don't know/i.test(text);
 }
 
 function makePlan(text, urgent) {
@@ -1414,12 +1414,12 @@ imageInput.addEventListener("change", () => {
   if (!file) return;
   const allowed = ["image/jpeg", "image/png", "image/webp"];
   if (!allowed.includes(file.type)) {
-    showToast(language === "ru" ? "РџРѕРґРґРµСЂР¶РёРІР°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ JPG, PNG Рё WEBP." : "JPG, PNG, WEBP нЊЊмќјл§Њ м§Ђм›ђлђ©л‹€л‹¤.");
+    showToast(language === "ru" ? "Поддерживаются только JPG, PNG и WEBP." : "JPG, PNG, WEBP 파일만 지원됩니다.");
     imageInput.value = "";
     return;
   }
   if (file.size > 5 * 1024 * 1024) {
-    showToast(language === "ru" ? "Р¤РѕС‚РѕРіСЂР°С„РёСЏ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РЅРµ Р±РѕР»СЊС€Рµ 5 РњР‘." : "мќґлЇём§ЂлЉ” 5MB мќґн•м—¬м•ј н•©л‹€л‹¤.");
+    showToast(language === "ru" ? "Фотография должна быть не больше 5 МБ." : "이미지는 5MB 이하여야 합니다.");
     imageInput.value = "";
     return;
   }
@@ -1429,7 +1429,7 @@ imageInput.addEventListener("change", () => {
     imagePreviewImg.src = selectedImageData;
     imagePreview.hidden = false;
   };
-  reader.onerror = () => showToast(language === "ru" ? "РќРµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕС‡РёС‚Р°С‚СЊ С„РѕС‚РѕРіСЂР°С„РёСЋ." : "мќґлЇём§ЂлҐј мќЅмќ„ м€ м—†мЉµл‹€л‹¤.");
+  reader.onerror = () => showToast(language === "ru" ? "Не удалось прочитать фотографию." : "이미지를 읽을 수 없습니다.");
   reader.readAsDataURL(file);
 });
 
@@ -1446,7 +1446,7 @@ function addChatMessage(role, text, imageData = null) {
   item.className = `chat-message ${role}`;
   const speaker = document.createElement("span");
   speaker.className = "speaker";
-  speaker.textContent = role === "user" ? (language === "ru" ? "РўР«" : "л‚") : "ANTIРҐРђРћРЎ";
+  speaker.textContent = role === "user" ? (language === "ru" ? "ТЫ" : "나") : "ANTIХАОС";
   const body = document.createElement("span");
   body.textContent = text;
   item.append(speaker, body);
@@ -1454,7 +1454,7 @@ function addChatMessage(role, text, imageData = null) {
     const image = document.createElement("img");
     image.className = "attached-image";
     image.src = imageData;
-    image.alt = language === "ru" ? "РџСЂРёРєСЂРµРїР»С‘РЅРЅР°СЏ С„РѕС‚РѕРіСЂР°С„РёСЏ" : "мІЁл¶Ђлђњ мќґлЇём§Ђ";
+    image.alt = language === "ru" ? "Прикреплённая фотография" : "첨부된 이미지";
     item.append(image);
   }
   $("chatMessages").append(item);
@@ -1465,9 +1465,9 @@ function setChatBusy(busy) {
   isSending = busy;
   $("analyzeBtn").disabled = busy;
   $("attachImageBtn").disabled = busy;
-  $("analyzeBtn").textContent = busy ? (language === "ru" ? "РћРўР’Р•Р§РђР®вЂ¦" : "л‹µліЂ м¤‘вЂ¦") : t("analyzeBtn");
+  $("analyzeBtn").textContent = busy ? (language === "ru" ? "ОТВЕЧАЮ…" : "답변 중…") : t("analyzeBtn");
   $("chatTyping").hidden = !busy;
-  $("chatStatus").textContent = busy ? (language === "ru" ? "Р”РЈРњРђР®" : "мѓќк°Ѓ м¤‘") : "GROQ READY";
+  $("chatStatus").textContent = busy ? (language === "ru" ? "ДУМАЮ" : "생각 중") : "GROQ READY";
 }
 
 async function sendMessage() {
@@ -1478,12 +1478,12 @@ async function sendMessage() {
     return;
   }
   if (text.length > 3000) {
-    showToast(language === "ru" ? "РЎРѕРѕР±С‰РµРЅРёРµ СЃР»РёС€РєРѕРј РґР»РёРЅРЅРѕРµ." : "л©”м‹њм§Ђк°Ђ л„€л¬ґ к№Ѓл‹€л‹¤.");
+    showToast(language === "ru" ? "Сообщение слишком длинное." : "메시지가 너무 깁니다.");
     return;
   }
   const messageText = text || (language === "ru"
-    ? "РџСЂРѕР°РЅР°Р»РёР·РёСЂСѓР№ РїСЂРёРєСЂРµРїР»С‘РЅРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ Рё РѕРїРёС€Рё, С‡С‚Рѕ РЅР° РЅС‘Рј РІРёРґРЅРѕ."
-    : "мІЁл¶Ђлђњ мќґлЇём§ЂлҐј л¶„м„ќн•кі  л¬ґм—‡мќґ ліґмќґлЉ”м§Ђ м„¤лЄ…н•ґ мЈјм„ёмљ”.");
+    ? "Проанализируй прикреплённое изображение и опиши, что на нём видно."
+    : "첨부된 이미지를 분석하고 무엇이 보이는지 설명해 주세요.");
 
   addChatMessage("user", messageText, attachedImage);
   chatHistory.push({role:"user", content:messageText, ...(attachedImage ? {image:attachedImage} : {})});
@@ -1499,7 +1499,7 @@ async function sendMessage() {
     });
     const data = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
-    if (!data.reply) throw new Error(language === "ru" ? "ANTIРҐРђРћРЎ РЅРµ РІРµСЂРЅСѓР» РѕС‚РІРµС‚." : "ANTIРҐРђРћРЎк°Ђ л‹µліЂмќ„ л°н™н•м§Ђ м•Љм•мЉµл‹€л‹¤.");
+    if (!data.reply) throw new Error(language === "ru" ? "ANTIХАОС не вернул ответ." : "ANTIХАОС가 답변을 반환하지 않았습니다.");
 
     chatHistory.push({role:"model", content:data.reply});
     addChatMessage("assistant", data.reply);
@@ -1507,22 +1507,22 @@ async function sendMessage() {
 
     currentPlan = {
       id:Date.now(), text:messageText, category:detectCategory(messageText), urgent:isUrgent(messageText),
-      steps:[{title:language === "ru" ? "РћС‚РІРµС‚ ANTIРҐРђРћРЎ" : "ANTIРҐРђРћРЎ л‹µліЂ", description:data.reply}],
+      steps:[{title:language === "ru" ? "Ответ ANTIХАОС" : "ANTIХАОС 답변", description:data.reply}],
       created:new Date().toLocaleString(language === "ru" ? "ru-RU" : "ko-KR")
     };
     renderPlan(currentPlan);
   } catch (error) {
-    console.error("ANTIРҐРђРћРЎ chat error:", error);
+    console.error("ANTIХАОС chat error:", error);
     addChatMessage("assistant", language === "ru"
-      ? `РќРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РѕС‚РІРµС‚: ${error.message}. РџСЂРѕРІРµСЂСЊ РїРѕРґРєР»СЋС‡РµРЅРёРµ Рє СЃРµСЂРІРµСЂСѓ Рё Groq API.`
-      : `л‹µліЂмќ„ к°Ђм ём¤м§Ђ лЄ»н–€мЉµл‹€л‹¤: ${error.message}. м„њлІ„м™Ђ Groq APIлҐј н™•мќён•ґ мЈјм„ёмљ”.`);
+      ? `Не получилось получить ответ: ${error.message}. Проверь подключение к серверу и Groq API.`
+      : `답변을 가져오지 못했습니다: ${error.message}. 서버와 Groq API를 확인해 주세요.`);
   } finally {
     setChatBusy(false);
     $("problem").focus();
   }
 }
 
-// РљРЅРѕРїРєР° Р°РЅР°Р»РёР·Р° Рё Enter РѕС‚РїСЂР°РІР»СЏСЋС‚ СЃРѕРѕР±С‰РµРЅРёРµ РІ ANTIРҐРђРћРЎ.
+// Кнопка анализа и Enter отправляют сообщение в ANTIХАОС.
 $("analyzeBtn").addEventListener("click", sendMessage);
 $("problem").addEventListener("keydown", event => {
   if (event.key === "Enter" && !event.shiftKey) {
@@ -1536,16 +1536,16 @@ $("clearChatBtn").addEventListener("click", () => {
   removeSelectedImage();
   $("chatMessages").innerHTML = "";
   addChatMessage("assistant", language === "ru"
-    ? "РќР°С‡РЅС‘Рј Р·Р°РЅРѕРІРѕ. Р§С‚Рѕ СЃРµР№С‡Р°СЃ Сѓ С‚РµР±СЏ РЅР° РґСѓС€Рµ?"
-    : "мѓ€лЎ­кІЊ м‹њмћ‘н•ґмљ”. м§Ђкё€ м–ґл–¤ мѓќк°Ѓмќґ л“њл‚мљ”?");
-  showToast(language === "ru" ? "Р”РёР°Р»РѕРі РѕС‡РёС‰РµРЅ." : "лЊЂн™”к°Ђ м§Ђм›ЊмЎЊмЉµл‹€л‹¤.");
+    ? "Начнём заново. Что сейчас у тебя на душе?"
+    : "새롭게 시작해요. 지금 어떤 생각이 드나요?");
+  showToast(language === "ru" ? "Диалог очищен." : "대화가 지워졌습니다.");
 });
 
 function setupVoiceInput() {
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SpeechRecognition) {
     $("micBtn").disabled = true;
-    $("micBtn").title = language === "ru" ? "Р“РѕР»РѕСЃРѕРІРѕР№ РІРІРѕРґ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ СЌС‚РёРј Р±СЂР°СѓР·РµСЂРѕРј" : "мќґ лёЊлќјмљ°м ЂлЉ” мќЊм„± мћ…л Ґмќ„ м§Ђм›ђн•м§Ђ м•ЉмЉµл‹€л‹¤";
+    $("micBtn").title = language === "ru" ? "Голосовой ввод не поддерживается этим браузером" : "이 브라우저는 음성 입력을 지원하지 않습니다";
     return;
   }
   recognition = new SpeechRecognition();
@@ -1555,8 +1555,8 @@ function setupVoiceInput() {
   recognition.onstart = () => {
     isRecording = true;
     $("micBtn").classList.add("recording");
-    $("micBtn").textContent = "в– ";
-    $("chatStatus").textContent = language === "ru" ? "РЎР›РЈРЁРђР®" : "л“ЈлЉ” м¤‘";
+    $("micBtn").textContent = "■";
+    $("chatStatus").textContent = language === "ru" ? "СЛУШАЮ" : "듣는 중";
   };
   recognition.onresult = event => {
     let transcript = "";
@@ -1566,19 +1566,19 @@ function setupVoiceInput() {
   };
   recognition.onerror = event => {
     console.warn("Speech recognition:", event.error);
-    showToast(language === "ru" ? "РќРµ СѓРґР°Р»РѕСЃСЊ СЂР°СЃРїРѕР·РЅР°С‚СЊ СЂРµС‡СЊ. РџСЂРѕРІРµСЂСЊ СЂР°Р·СЂРµС€РµРЅРёРµ РјРёРєСЂРѕС„РѕРЅР°." : "мќЊм„±мќ„ мќём‹ќн•м§Ђ лЄ»н–€мЉµл‹€л‹¤. л§€мќґнЃ¬ к¶Њн•њмќ„ н™•мќён•м„ёмљ”.");
+    showToast(language === "ru" ? "Не удалось распознать речь. Проверь разрешение микрофона." : "음성을 인식하지 못했습니다. 마이크 권한을 확인하세요.");
   };
   recognition.onend = () => {
     isRecording = false;
     $("micBtn").classList.remove("recording");
-    $("micBtn").textContent = "рџЋ™";
+    $("micBtn").textContent = "🎙";
     $("chatStatus").textContent = "GROQ READY";
   };
 }
 
 $("micBtn").addEventListener("click", () => {
   if (!recognition) setupVoiceInput();
-  if (!recognition) { showToast(language === "ru" ? "РџРѕРїСЂРѕР±СѓР№ РѕС‚РєСЂС‹С‚СЊ СЃР°Р№С‚ РІ Microsoft Edge РёР»Рё Chrome." : "Microsoft Edge лђлЉ” Chromeм—ђм„њ м—ґм–ґ ліґм„ёмљ”."); return; }
+  if (!recognition) { showToast(language === "ru" ? "Попробуй открыть сайт в Microsoft Edge или Chrome." : "Microsoft Edge 또는 Chrome에서 열어 보세요."); return; }
   try {
     if (isRecording) recognition.stop();
     else { recognition.lang = language === "ru" ? "ru-RU" : "ko-KR"; recognition.start(); }
@@ -1592,7 +1592,7 @@ $("langBtn").addEventListener("click", () => {
 });
 
 function planAsText(plan) {
-  let result = `ANTIРҐРђРћРЎ\n${plan.text}\n\n`;
+  let result = `ANTIХАОС\n${plan.text}\n\n`;
   plan.steps.forEach((step,index) => {
     result += `${index+1}. ${step.title}\n${step.description}\n\n`;
   });
@@ -1654,7 +1654,7 @@ function renderHistory() {
 
     const text = document.createElement("p");
     text.textContent = plan.text.length > 110
-      ? plan.text.slice(0,110) + "вЂ¦"
+      ? plan.text.slice(0,110) + "…"
       : plan.text;
 
     const open = document.createElement("button");
@@ -1804,4 +1804,3 @@ applyLanguage();
 
 </body>
 </html>
-
