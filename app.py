@@ -207,6 +207,11 @@ def too_large(error):
     }), 413
 
 
+
+@app.get("/yandex_4ded8897e99c4224.html")
+def yandex_verification():
+    return send_from_directory(BASE_DIR, "yandex_4ded8897e99c4224.html", mimetype="text/html")
+
 if __name__ == "__main__":
     print("=" * 45)
     print("ANTIХАОС AI SERVER")
