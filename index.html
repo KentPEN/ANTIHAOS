@@ -890,6 +890,114 @@ footer a { color: #999; text-decoration: none; }
     scroll-behavior: auto !important;
   }
 }
+
+/* Quiet ambient music control — restrained monochrome glass */
+.music-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 22px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px;
+  border: 1px solid rgba(210,214,222,.13);
+  border-radius: 999px;
+  background: rgba(105,110,120,.16);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.16);
+  opacity: .62;
+  transition: opacity .25s ease, background .25s ease, border-color .25s ease;
+}
+.music-widget:hover,
+.music-widget:focus-within,
+.music-widget.expanded {
+  opacity: .94;
+  background: rgba(125,130,140,.22);
+  border-color: rgba(220,224,232,.23);
+}
+.music-toggle {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  border: 1px solid rgba(225,228,235,.16);
+  border-radius: 50%;
+  color: rgba(240,242,246,.82);
+  background: rgba(255,255,255,.055);
+  font-size: 13px;
+  line-height: 1;
+  transition: .2s ease;
+}
+.music-toggle:hover { background: rgba(255,255,255,.13); color: #fff; }
+.music-volume-wrap {
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: width .25s ease;
+}
+.music-widget:hover .music-volume-wrap,
+.music-widget:focus-within .music-volume-wrap,
+.music-widget.expanded .music-volume-wrap { width: 92px; }
+.music-volume {
+  width: 88px;
+  height: 3px;
+  margin: 0 2px;
+  accent-color: #aeb3bd;
+  cursor: pointer;
+  opacity: .78;
+}
+.music-widget:focus-within .music-toggle { outline: 1px solid rgba(255,255,255,.3); outline-offset: 2px; }
+.music-widget .music-hint {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  padding: 6px 9px;
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 6px;
+  color: rgba(235,237,242,.65);
+  background: rgba(30,31,35,.58);
+  font-size: 9px;
+  letter-spacing: .6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+.music-widget:hover .music-hint { opacity: 1; }
+.creator-idea {
+  max-width: 820px;
+  margin: 0 auto 28px;
+  padding: 0 22px;
+  text-align: center;
+}
+.creator-idea .idea-kicker {
+  margin-bottom: 17px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+.creator-idea .idea-line {
+  color: #bdbdbd;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(17px,2.5vw,25px);
+  line-height: 1.55;
+  letter-spacing: -.5px;
+}
+.creator-idea .idea-line strong { color: #f0f0f0; font-weight: 600; }
+@media (max-width:600px) {
+  .music-widget { right: 14px; bottom: 14px; opacity: .82; }
+  .music-widget .music-volume-wrap { width: 0; }
+  .music-widget.expanded .music-volume-wrap,
+  .music-widget:focus-within .music-volume-wrap { width: 92px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .music-widget, .music-volume-wrap { transition: none; }
+}
+
 </style>
 </head>
 
@@ -1093,6 +1201,10 @@ footer a { color: #999; text-decoration: none; }
 </section>
 
 <section class="quote-section reveal">
+  <div class="creator-idea">
+    <div class="idea-kicker" data-i="ideaKicker">ИДЕЯ, КОТОРУЮ ТЫ ЗАКЛАДЫВАЕШЬ В ANTIХАОС</div>
+    <div class="idea-line" data-i="ideaLine">Не просто поговорить с ИИ — разобраться в ситуации и понять, что делать дальше.</div>
+  </div>
   <div class="quote-mark">“</div>
   <h2 data-i="quote">Не нужно видеть всю дорогу. Достаточно увидеть следующий шаг.</h2>
   <p>ANTIХАОС / YOUR SPACE FOR CLARITY</p>
@@ -1122,6 +1234,18 @@ footer a { color: #999; text-decoration: none; }
   <span data-i="footerText">Создано для ясности, а не для шума.</span>
   <a href="#home">BACK TO TOP ↑</a>
 </footer>
+
+
+<audio id="antihaosAmbientAudio" src="static/audio/gentle-synth-drift.mp3" preload="none" loop></audio>
+<div class="music-widget" id="musicWidget" aria-label="Фоновая музыка">
+  <span class="music-hint">AMBIENT SOUND</span>
+  <button class="music-toggle" id="musicToggle" type="button"
+    aria-label="Включить фоновую музыку" aria-pressed="false" title="Фоновая музыка">♫</button>
+  <div class="music-volume-wrap">
+    <input class="music-volume" id="musicVolume" type="range" min="0" max="100" value="15"
+      aria-label="Громкость фоновой музыки">
+  </div>
+</div>
 
 <div class="toast" id="toast"></div>
 
@@ -1156,6 +1280,8 @@ ru: {
   feature1Title:"Ясность", feature1Desc:"Разделяй большую проблему на небольшие и понятные части.",
   feature2Title:"Направление", feature2Desc:"Определи следующий шаг вместо попытки решить всё сразу.",
   feature3Title:"Движение", feature3Desc:"Сохраняй планы, возвращайся к ним и замечай свой прогресс.",
+  ideaKicker:"ИДЕЯ, КОТОРУЮ ТЫ ЗАКЛАДЫВАЕШЬ В ANTIХАОС",
+  ideaLine:"Не просто поговорить с ИИ — разобраться в ситуации и понять, что делать дальше.",
   quote:"Не нужно видеть всю дорогу. Достаточно увидеть следующий шаг.",
   sectionFour:"04 / СОЗДАТЕЛЬ", creatorHeading:"За идеей стоит человек.",
   creatorName:"Создатель ANTIХАОС",
@@ -1217,6 +1343,8 @@ ko: {
   feature1Title:"명확함", feature1Desc:"큰 문제를 작고 이해하기 쉬운 부분으로 나누세요.",
   feature2Title:"방향", feature2Desc:"모든 것을 한 번에 해결하려 하지 말고 다음 단계를 정하세요.",
   feature3Title:"전진", feature3Desc:"계획을 저장하고 진행 상황을 확인하세요.",
+  ideaKicker:"ANTIХАОС에 담긴 아이디어",
+  ideaLine:"AI와 대화하는 것만이 아니라, 상황을 정리하고 다음에 무엇을 할지 이해하는 것.",
   quote:"전체 길을 볼 필요는 없습니다. 다음 한 걸음이면 충분합니다.",
   sectionFour:"04 / 제작자", creatorHeading:"아이디어 뒤에는 사람이 있습니다.",
   creatorName:"ANTIХАОС 제작자",
@@ -1798,6 +1926,83 @@ const observer = new IntersectionObserver(entries => {
 }, {threshold:.12});
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+
+// SUBTLE AMBIENT MUSIC PLAYER
+(() => {
+  const audio = $("antihaosAmbientAudio");
+  const widget = $("musicWidget");
+  const toggle = $("musicToggle");
+  const volume = $("musicVolume");
+  if (!audio || !widget || !toggle || !volume) return;
+
+  const savedVolume = localStorage.getItem("antichaos_music_volume");
+  const savedEnabled = localStorage.getItem("antichaos_music_enabled") === "true";
+  audio.volume = savedVolume === null ? 0.15 : Math.max(0, Math.min(1, Number(savedVolume) / 100));
+  volume.value = String(Math.round(audio.volume * 100));
+
+  function updateMusicButton() {
+    const playing = !audio.paused;
+    toggle.textContent = playing ? "Ⅱ" : "♫";
+    toggle.setAttribute("aria-pressed", String(playing));
+    toggle.setAttribute("aria-label", playing ? "Выключить фоновую музыку" : "Включить фоновую музыку");
+    toggle.title = playing ? "Выключить музыку" : "Включить музыку";
+  }
+
+  async function startMusic() {
+    try {
+      await audio.play();
+      localStorage.setItem("antichaos_music_enabled", "true");
+    } catch (error) {
+      localStorage.setItem("antichaos_music_enabled", "false");
+      showToast("Нажми ещё раз, чтобы включить музыку.");
+    }
+    updateMusicButton();
+  }
+
+  toggle.addEventListener("click", async () => {
+    widget.classList.add("expanded");
+    if (audio.paused) await startMusic();
+    else {
+      audio.pause();
+      localStorage.setItem("antichaos_music_enabled", "false");
+      updateMusicButton();
+    }
+  });
+
+  volume.addEventListener("input", () => {
+    audio.volume = Number(volume.value) / 100;
+    localStorage.setItem("antichaos_music_volume", volume.value);
+    if (audio.volume === 0 && !audio.paused) {
+      audio.pause();
+      localStorage.setItem("antichaos_music_enabled", "false");
+    }
+  });
+
+  widget.addEventListener("pointerleave", () => {
+    if (window.matchMedia("(hover: hover)").matches) widget.classList.remove("expanded");
+  });
+  widget.addEventListener("focusout", event => {
+    if (!widget.contains(event.relatedTarget)) widget.classList.remove("expanded");
+  });
+
+  audio.addEventListener("play", updateMusicButton);
+  audio.addEventListener("pause", updateMusicButton);
+
+  // Browsers require a user gesture; remember the preference but never force autoplay.
+  if (savedEnabled) {
+    toggle.title = "Нажми, чтобы продолжить фоновую музыку";
+    const resumeOnGesture = event => {
+      if (widget.contains(event.target)) return;
+      startMusic();
+      document.removeEventListener("pointerdown", resumeOnGesture, true);
+      document.removeEventListener("keydown", resumeOnGesture, true);
+    };
+    document.addEventListener("pointerdown", resumeOnGesture, true);
+    document.addEventListener("keydown", resumeOnGesture, true);
+  }
+  updateMusicButton();
+})();
 
 applyLanguage();
 </script>
